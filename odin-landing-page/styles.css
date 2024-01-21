@@ -1,0 +1,174 @@
+*,:after,:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    background-color: #1F2937;
+    border-radius: 50%;
+  }
+
+.oval {
+    height: 100px;
+    width: 200px;
+    background-color: #1F2937;
+    border-radius: 50%;
+  }
+
+.square {
+    height: 100px;
+    width: 100px;
+    background-color: #1F2937;
+  }
+
+.triangle {
+	width: 100px;
+	height: 100px;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 100px solid #1F2937;
+}
+
+.shapes .triangle{
+    color:#1F2937;
+}
+
+nav{
+    background-color: #1F2937;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 60px;
+}
+
+#logo{
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    list-style: none;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #f9faf8;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: #f9faf8;
+}
+
+.hero{
+    background-color: #1F2937;
+    display: flex;
+}
+
+.hero-left{
+    flex: 1;   
+    display: flex;
+    flex-direction: column;  
+    align-items: right;
+    padding: 60px;
+    margin: auto;
+}
+
+.hero-left h1{
+    font-size: 48px;
+    color: #f9faf8;
+}
+
+.hero-left p{
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.hero-left button{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #3882F6;
+    color: white;
+    margin-top: 40px;
+}
+
+.hero img{
+    flex: 1;
+    width: 10%;
+    height: 10%;
+    margin: auto;
+}
+
+.shapes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 60px;
+    flex-wrap: wrap;
+}
+
+.shapes div{
+    display: flex;
+    margin: 10px;
+    justify-content: center; 
+    align-items: flex-end; 
+    color: #f9faf8;
+}
+
+.quote{
+    background-color: #e5e7eb;
+    display: flex;
+    padding: 60px;
+}
+
+.quote p{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    color: #1F2937;
+}
+
+.quote .author{
+    font-size: 24px;
+    font-weight: bold;
+    color: #1F2937;
+    padding-top: 80px;
+    white-space: nowrap;
+}
+
+.signup{
+    background-color: #3882F6;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 120PX;
+}
+
+h2{
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 30px;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #3882F6;
+    color: white;
+}
+
+
+
+
+
+

@@ -1,3 +1,5 @@
 #This is a Odin Project demo
 
-[Recipes](./recipes.html)
+[Recipes](./odin-recipes/recipes.html)
+
+[Landing Page](./odin-landing-page/landingPage.html)

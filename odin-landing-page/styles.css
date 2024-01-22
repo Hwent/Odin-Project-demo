@@ -149,6 +149,8 @@ a{
     display: flex;
     justify-content: space-between;
     padding: 60px 120PX;
+    margin: 8vw 16vw;
+    border-radius: 20px;
 }
 
 h2{

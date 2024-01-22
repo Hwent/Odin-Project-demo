@@ -3,3 +3,5 @@
 [Recipes](./odin-recipes/recipes.html)
 
 [Landing Page](./odin-landing-page/landingPage.html)
+
+[Rock Paper Scissors](./odin-rps/index.html)

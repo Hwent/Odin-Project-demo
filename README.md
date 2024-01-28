@@ -5,3 +5,5 @@
 [Landing Page](./odin-landing-page/landingPage.html)
 
 [Rock Paper Scissors](./odin-rps/index.html)
+
+[Etch-a-Sketch](./odin-Etch-a-sketch/index.html)

@@ -1,0 +1,75 @@
+*::after,
+*::before,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  background-color: lightgray;
+}
+
+.header {
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "clear resize";
+  grid-template-rows: 32px minmax(40px, 50px);
+  grid-template-columns: minmax(40px, 1fr) minmax(40px, 1fr);
+  width: 70%;
+  max-width: 600px;
+  max-height: 120px;
+  margin: 0 auto;
+}
+
+.header h1 {
+  grid-area: title;
+  font-size: 24px; /* Adjust this value as needed */
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.header button {
+  padding: 10px;
+  border: 2px solid black;
+  font-size: large;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: rgb(149, 20, 20);
+  color: white;
+}
+
+#clear {
+  grid-area: clear;
+}
+
+#resize {
+  grid-area: resize;
+}
+
+.container {
+  height: 90vh;
+  width: 90vh;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell {
+  /* keep cell square */
+  aspect-ratio: 1/1;
+  height: 100%;
+  width: 100%;
+  border: 0.1vw solid black;
+  cursor: pointer;
+}

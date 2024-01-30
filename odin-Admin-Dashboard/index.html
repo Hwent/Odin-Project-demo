@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="icon" href="../microsoft-windows.svg" type="image/svg+xml" />
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- tailwandcss grid include sidebar and header-->
+      <div class="grid grid-cols-12 grid-rows-7 h-screen w-screen">
+        <aside class="col-span-2 row-span-7 bg-red-500">
+          <!-- Sidebar content goes here -->
+          <div class="flex items-center flex-wrap">
+            <h1 class="text-xl font-bold ml-2">Dashboard</h1>
+            <img
+              src="../microsoft-windows.svg"
+              alt="Icon Description"
+              class="icon w-10 h-10"
+            />
+          </div>
+          <div class="flex flex-col items-center mt-20">
+            <a href="#" class="nav-link m-2">Profile</a>
+            <a href="#" class="nav-link m-2">Messages</a>
+            <a href="#" class="nav-link m-2">History</a>
+            <a href="#" class="nav-link m-2">Task</a>
+            <a href="#" class="nav-link m-2">Communities</a>
+            <a href="#" class="nav-link m-2">Settings</a>
+            <a href="#" class="nav-link m-2">Support</a>
+            <a href="#" class="nav-link m-2">Privacy</a>
+            <a href="#" class="nav-link m-2">Home</a>
+          </div>
+        </aside>
+
+        <header class="col-span-10 row-span-1 bg-blue-500">
+          <!-- Header content goes here -->
+          <!-- flex 1 search bar + user icon + user name -->
+          <div class="flex items-center justify-between mx-5">
+            <div class="flex items-center justify-center">
+              <img
+                src="../text-search-variant.svg"
+                alt="Icon Description"
+                class="icon w-10 h-10"
+              />
+              <input
+                type="text"
+                placeholder="Search"
+                class="search-bar rounded-full p-2 m-2"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <img
+                src="../account.svg"
+                alt="Icon Description"
+                class="icon w-10 h-10"
+              />
+              <h1 class="text-xl font-bold ml-2">Admin</h1>
+            </div>
+          </div>
+          <!-- flex{user icon + page} +flex{new upload share buttons} -->
+          <div class="flex items-center justify-between mx-5">
+            <div class="flex items-center justify-center">
+              <img
+                src="../account.svg"
+                alt="Icon Description"
+                class="icon w-10 h-10"
+              />
+              <p>Hello, user Admin.</p>
+            </div>
+            <div class="flex items-center justify-center">
+              <a href="#" class="nav-link m-2">New</a>
+              <a href="#" class="nav-link m-2">Upload</a>
+              <a href="#" class="nav-link m-2">Share</a>
+            </div>
+          </div>
+        </header>
+
+        <main class="col-span-10 row-span-6 bg-green-500">
+          <!-- Main content goes here -->
+          <div class="grid grid-cols-2 gap-4 m-10">
+            <div class="project p-10 border-4 border-red-500 rounded-lg">
+              <h2 class="project-title text-xl font-bold">Project 1</h2>
+              <p class="project-description">
+                This is the description for Project 1.
+              </p>
+              <div class="project-links mt-2">
+                <a href="#" class="project-link m-1 bg-blue-500 rounded-md p-1"
+                  >Favourite</a
+                >
+                <a href="#" class="project-link m-1 bg-blue-500 rounded-md p-1"
+                  >View</a
+                >
+                <a href="#" class="project-link m-1 bg-blue-500 rounded-md p-1"
+                  >Share</a
+                >
+              </div>
+            </div>
+            <div class="project p-10 border-4 border-red-500 rounded-lg">
+              <h2 class="project-title text-xl font-bold">Project 2</h2>
+              <p class="project-description">
+                This is the description for Project 2.
+              </p>
+              <div class="project-links mt-2">
+                <a href="#" class="project-link m-1 bg-blue-500 rounded-md p-1"
+                  >Favourite</a
+                >
+                <a href="#" class="project-link m-1 bg-blue-500 rounded-md p-1"
+                  >View</a
+                >
+                <a href="#" class="project-link m-1 bg-blue-500 rounded-md p-1"
+                  >Share</a
+                >
+              </div>
+            </div>
+            <div class="project p-10 border-4 border-red-500 rounded-lg">
+              <h2 class="project-title text-xl font-bold">Project 3</h2>
+              <p class="project-description">
+                This is the description for Project 3.
+              </p>
+              <div class="project-links mt-2">
+                <a href="#" class="project-link m-1 bg-blue-500 rounded-md p-1"
+                  >Favourite</a
+                >
+                <a href="#" class="project-link m-1 bg-blue-500 rounded-md p-1"
+                  >View</a
+                >
+                <a href="#" class="project-link m-1 bg-blue-500 rounded-md p-1"
+                  >Share</a
+                >
+              </div>
+            </div>
+            <div class="project p-10 border-4 border-red-500 rounded-lg">
+              <h2 class="project-title text-xl font-bold">Project 4</h2>
+              <p class="project-description">
+                This is the description for Project 4.
+              </p>
+              <div class="project-links mt-2">
+                <a href="#" class="project-link m-1 bg-blue-500 rounded-md p-1"
+                  >Favourite</a
+                >
+                <a href="#" class="project-link m-1 bg-blue-500 rounded-md p-1"
+                  >View</a
+                >
+                <a href="#" class="project-link m-1 bg-blue-500 rounded-md p-1"
+                  >Share</a
+                >
+              </div>
+            </div>
+            <div class="project p-10 border-4 border-red-500 rounded-lg">
+              <h2 class="project-title text-xl font-bold">Project 5</h2>
+              <p class="project-description">
+                This is the description for Project 5.
+              </p>
+              <div class="project-links mt-2">
+                <a href="#" class="project-link m-1 bg-blue-500 rounded-md p-1"
+                  >Favourite</a
+                >
+                <a href="#" class="project-link m-1 bg-blue-500 rounded-md p-1"
+                  >View</a
+                >
+                <a href="#" class="project-link m-1 bg-blue-500 rounded-md p-1"
+                  >Share</a
+                >
+              </div>
+            </div>
+            <div class="project p-10 border-4 border-red-500 rounded-lg">
+              <h2 class="project-title text-xl font-bold">Project 6</h2>
+              <p class="project-description">
+                This is the description for Project 6.
+              </p>
+              <div class="project-links mt-2">
+                <a href="#" class="project-link m-1 bg-blue-500 rounded-md p-1"
+                  >Favourite</a
+                >
+                <a href="#" class="project-link m-1 bg-blue-500 rounded-md p-1"
+                  >View</a
+                >
+                <a href="#" class="project-link m-1 bg-blue-500 rounded-md p-1"
+                  >Share</a
+                >
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

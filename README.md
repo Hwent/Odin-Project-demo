@@ -9,3 +9,5 @@
 [Etch-a-Sketch](./odin-Etch-a-Sketch/index.html)
 
 [Signup Form](./odin-signup-form/index.html)
+
+[Admin Dashboard](./odin-Admin-Dashboard/index.html)

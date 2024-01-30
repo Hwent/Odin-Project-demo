@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Signup Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <!-- logo -->
+        <div class="logo">
+          <img
+            src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+            alt="The Odin Project Logo"
+          />
+          <span>ODIN</span>
+        </div>
+      </div>
+      <div class="right">
+        <h1>Signup Form</h1>
+        <form action="https://httpbin.org/post" method="post">
+          <div>
+            <label for="first-name">First Name</label>
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              placeholder="Alice"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="last-name">Last Name</label>
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              placeholder="Bob"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@email.com"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="phone">Phone</label>
+            <input
+              type="phone"
+              name="phone"
+              id="phone"
+              placeholder="6376456898"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required />
+          </div>
+
+          <div>
+            <label for="confirm-password">Confirm Password</label>
+            <input
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+              required
+            />
+          </div>
+
+          <button class="submit" type="submit">Create Account</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      //check if password and confirm password match
+      const password = document.getElementById("password");
+      const confirmPassword = document.getElementById("confirm-password");
+      const submit = document.querySelector(".submit");
+
+      submit.addEventListener("click", (e) => {
+        if (password.value !== confirmPassword.value) {
+          e.preventDefault();
+          alert("Passwords do not match");
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -6,6 +6,6 @@
 
 [Rock Paper Scissors](./odin-rps/index.html)
 
-[Etch-a-Sketch](./odin-Etch-a-sketch/index.html)
+[Etch-a-Sketch](./odin-Etch-a-Sketch/index.html)
 
 [Signup Form](./odin-signup-form/index.html)

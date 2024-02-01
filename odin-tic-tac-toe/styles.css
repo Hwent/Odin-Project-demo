@@ -1,0 +1,60 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 2rem;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+#reset {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #f4f4f4;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+#reset:hover {
+  background-color: #000;
+  color: #f4f4f4;
+}
+
+.container {
+  height: 360px;
+  width: 360px;
+  margin: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.cell {
+  display: flex;
+  width: 120px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  border: 2px solid #000;
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 1.5em;
+}

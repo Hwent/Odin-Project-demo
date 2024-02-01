@@ -1,6 +1,6 @@
 #This is a Odin Project demo
 
-[## Etch-a-Sketch](./odin-Etch-a-Sketch/index.html)
+[#Etch-a-Sketch](./odin-Etch-a-Sketch/index.html)
 
 [Recipes](./odin-recipes/recipes.html)
 
@@ -13,3 +13,5 @@
 [Admin Dashboard](./odin-Admin-Dashboard/index.html)
 
 [Library](./odin-library/index.html)
+
+[Tic Tac Toe](./odin-tic-tac-toe/index.html)

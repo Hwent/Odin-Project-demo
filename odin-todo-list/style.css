@@ -1,0 +1,55 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+#myModal {
+  display: none;
+  /* other styles */
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 200px;
+  height: 100%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+}
+
+.content {
+  margin-left: 210px;
+  margin-top: 20px;
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  text-align: center;
+}

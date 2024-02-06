@@ -7,11 +7,11 @@ html_content = """
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    <script src="script.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
 """
@@ -33,8 +33,8 @@ js_content = """
 with open('index.html', 'w') as f:
     f.write(html_content)
 
-with open('styles.css', 'w') as f:
+with open('style.css', 'w') as f:
     f.write(css_content)
 
-with open('script.js', 'w') as f:
+with open('index.js', 'w') as f:
     f.write(js_content)

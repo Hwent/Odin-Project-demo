@@ -2,6 +2,8 @@
 
 [#Etch-a-Sketch](./odin-Etch-a-Sketch/index.html)
 
+[Todo list](./odin-todo-list/index.html)
+
 [Recipes](./odin-recipes/recipes.html)
 
 [Landing Page](./odin-landing-page/landingPage.html)

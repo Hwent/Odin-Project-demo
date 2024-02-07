@@ -23,6 +23,10 @@ css_content = """
   padding: 0;
   box-sizing: border-box;
 }
+
+li {
+  list-style-type: none;
+}
 """
 
 # Define the content of script.js

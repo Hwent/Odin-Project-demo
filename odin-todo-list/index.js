@@ -125,7 +125,7 @@ form.addEventListener("submit", (event) => {
 });
 
 //Generate example
-function generateExample() {
+async function generateExample() {
   storage.saveTodo({
     id: new Date().getTime(),
     project: "Home",
@@ -134,13 +134,15 @@ function generateExample() {
     dueDate: "2024-12-31",
   });
 
-  setTimeout(() => {
-    storage.saveTodo({
-      id: new Date().getTime(),
-      project: "Work",
-      todo: "Meeting",
-      description: "Meeting with the team",
-      dueDate: "2024-12-31",
-    });
-  }, 1); // Delay of 1 millisecond
+  await new Promise((resolve) => setTimeout(resolve, 1)); // Delay of 1 millisecond
+
+  storage.saveTodo({
+    id: new Date().getTime(),
+    project: "Work",
+    todo: "Meeting",
+    description: "Meeting with the team",
+    dueDate: "2024-12-31",
+  });
+  content.innerHTML = "";
+  content.appendChild(addContent());
 }

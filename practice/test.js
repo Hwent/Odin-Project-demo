@@ -1,6 +1,6 @@
 const { fib, fibRec } = require("./fib");
 const mergeSort = require("./mergeSort");
-const { performance } = require("perf_hooks");
+const hashmap = require("./hashmap");
 
 describe("Fibonacci functions", () => {
   test("fib function should return correct fibonacci sequence", () => {
@@ -36,5 +36,69 @@ describe("mergeSort function", () => {
   });
 });
 
-console.log("Sizes:", sizes);
-console.log("Times:", times);
+describe("hashmap function", () => {
+  let map;
+
+  beforeEach(() => {
+    map = hashmap();
+  });
+
+  test("set and get functions should work correctly", () => {
+    map.set("key1", "value1");
+    map.set("key2", "value2");
+    expect(map.get("key1")).toEqual("value1");
+    expect(map.get("key2")).toEqual("value2");
+  });
+
+  test("has function should work correctly", () => {
+    map.set("key1", "value1");
+    expect(map.has("key1")).toEqual(true);
+    expect(map.has("key2")).toEqual(false);
+  });
+
+  test("remove function should work correctly", () => {
+    map.set("key1", "value1");
+    map.remove("key1");
+    expect(map.get("key1")).toBeNull();
+    expect(map.has("key1")).toEqual(false);
+  });
+
+  test("length function should work correctly", () => {
+    map.set("key1", "value1");
+    map.set("key2", "value2");
+    expect(map.length()).toEqual(2);
+    map.remove("key1");
+    expect(map.length()).toEqual(1);
+  });
+
+  test("clear function should work correctly", () => {
+    map.set("key1", "value1");
+    map.set("key2", "value2");
+    map.clear();
+    expect(map.length()).toEqual(0);
+  });
+  test("keys function should return all keys", () => {
+    map.set("key1", "value1");
+    map.set("key2", "value2");
+    const keys = map.keys();
+    expect(keys.length).toEqual(2);
+    // Since we can't predict the exact hashed keys, we just check the length
+  });
+
+  test("values function should return all values", () => {
+    map.set("key1", "value1");
+    map.set("key2", "value2");
+    const values = map.values();
+    expect(values.length).toEqual(2);
+    expect(values).toContain("value1");
+    expect(values).toContain("value2");
+  });
+
+  test("entries function should return all entries", () => {
+    map.set("key1", "value1");
+    map.set("key2", "value2");
+    const entries = map.entries();
+    expect(entries.length).toEqual(2);
+    // Since we can't predict the exact hashed keys, we just check the length
+  });
+});

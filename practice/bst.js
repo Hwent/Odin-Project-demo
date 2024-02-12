@@ -105,29 +105,12 @@ class Tree {
     return node ? this.depth(node) : -1;
   }
 
-  heightOfValue(value) {
-    const node = this.find(value);
-    return node ? this.height(node) : -1;
-  }
-
-  depthOfValue(value) {
-    const node = this.find(value);
-    return node ? this.depth(node) : -1;
-  }
-
   getParent(node, parent = this.root) {
     if (!parent) return null;
     if (parent.left === node || parent.right === node) return parent;
     return (
       this.getParent(node, parent.left) || this.getParent(node, parent.right)
     );
-  }
-
-  find(value, node = this.root) {
-    if (!node) return null;
-    if (node.val === value) return node;
-    if (value < node.val) return this.find(value, node.left);
-    return this.find(value, node.right);
   }
 
   isBalanced(node = this.root) {
@@ -179,6 +162,19 @@ class Tree {
   postOrder() {
     return this.printOrder("post");
   }
+
+  bfs() {
+    let result = [];
+    let queue = [];
+    if (this.root) queue.push(this.root);
+    while (queue.length) {
+      let node = queue.shift();
+      result.push(node.val);
+      if (node.left) queue.push(node.left);
+      if (node.right) queue.push(node.right);
+    }
+    return result;
+  }
 }
 
 //helper function to print tree
@@ -202,9 +198,20 @@ tree.insert(10);
 tree.insert(9);
 tree.insert(8);
 prettyPrint(tree.root);
-console.log(tree.height(), tree.depthOfValue(8));
+console.log("height:", tree.height(), "depth of 9:", tree.depthOfValue(9));
+console.log(tree.bfs());
+console.log(tree.isBalanced());
 tree.rebalance();
 tree.delete(8);
 prettyPrint(tree.root);
+console.log(tree.isBalanced());
+//inOrder
+console.log("inOrder:", tree.inOrder());
+//preOrder
+console.log("preOrder:", tree.preOrder());
+//postOrder
+console.log("postOrder:", tree.postOrder());
+//bfs
+console.log("bfs:", tree.bfs());
 
 module.exports = { TreeNode, Tree, prettyPrint };

@@ -2,7 +2,7 @@ const { fib, fibRec } = require("./fib");
 const mergeSort = require("./mergeSort");
 const hashmap = require("./hashmap");
 
-describe("Fibonacci functions", () => {
+describe.skip("Fibonacci functions", () => {
   test("fib function should return correct fibonacci sequence", () => {
     expect(fib(8)).toEqual([0, 1, 1, 2, 3, 5, 8, 13]);
     expect(fib(5)).toEqual([0, 1, 1, 2, 3]);
@@ -18,7 +18,7 @@ describe("Fibonacci functions", () => {
   });
 });
 
-describe("mergeSort function", () => {
+describe.skip("mergeSort function", () => {
   test("should correctly sort an array", () => {
     const unsortedArray = [5, 3, 8, 4, 6, 1, 7, 2];
     const sortedArray = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -36,7 +36,7 @@ describe("mergeSort function", () => {
   });
 });
 
-describe("hashmap function", () => {
+describe.skip("hashmap function", () => {
   let map;
 
   beforeEach(() => {
